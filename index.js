@@ -48,14 +48,14 @@ populateGrid.addEventListener('click', () => {
 
 
 // reset grid
-const reset = document.querySelector('.reset');
+// const reset = document.querySelector('.reset');
 
-reset.addEventListener('click', function() {
-  const child = container.childNodes;
-  for (let i = 1; i < child.length; i++) {
-    child[i].style.backgroundColor = '';
-  }
-})
+// reset.addEventListener('click', function() {
+//   const child = container.childNodes;
+//   for (let i = 1; i < child.length; i++) {
+//     child[i].style.backgroundColor = '';
+//   }
+// })
 
 window.onload = function() {
   gridSize.value = '';
