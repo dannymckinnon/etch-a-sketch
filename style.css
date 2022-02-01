@@ -4,25 +4,42 @@ html, body {
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0px;
   background-color: #fdede7;
+  gap: 50px;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
+  flex-shrink: 0;
   /* if you want a set size change width and height to px values */
   width: 500px;
   height: 500px;
 }
 
 .container div {
-  outline: 0.01px solid rgb(171, 205, 239);
+  outline: 0.9px dashed rgb(171, 205, 239);
   /* outline: 0.01px solid rgb(209, 209, 209); */
   /* these must be changed with js depending on number the user enters */
   height: 6.25%;
   width: 6.25%;
   background-color: white;
 }
+
+input, input:focus {
+  border: 0.9px dashed rgb(171, 205, 239);
+  width: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  outline: none;
+}
+
+button {
+  color: rgb(94, 94, 94);
+  background-color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
